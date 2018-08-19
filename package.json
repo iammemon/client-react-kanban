@@ -1,0 +1,39 @@
+{
+  "name": "client-react-kanban",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "date-fns": "^1.29.0",
+    "marked": "^0.5.0",
+    "node-sass-chokidar": "^1.3.3",
+    "normalizr": "^3.2.4",
+    "prop-types": "latest",
+    "react": "^16.4.2",
+    "react-aria-menubutton": "^6.0.1",
+    "react-beautiful-dnd": "^9.0.0",
+    "react-day-picker": "^7.1.10",
+    "react-dom": "^16.4.2",
+    "react-head": "^2.2.0",
+    "react-icons": "^3.0.5",
+    "react-modal": "^3.5.1",
+    "react-onclickoutside": "^6.7.1",
+    "react-redux": "^5.0.7",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4",
+    "react-textarea-autosize": "^7.0.4",
+    "redux": "^4.0.0",
+    "redux-devtools-extension": "^2.13.5",
+    "shortid": "^2.2.13",
+    "slugify": "^1.3.1"
+  },
+  "scripts": {
+    "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

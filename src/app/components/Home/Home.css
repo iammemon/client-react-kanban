@@ -1,0 +1,152 @@
+.home {
+  display: inline-flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background: #eee;
+  overflow: auto; }
+
+.main-content {
+  display: inline-flex;
+  flex-direction: column;
+  width: 1080px;
+  margin: 40px; }
+
+@media (max-width: 1160px) {
+  .main-content {
+    width: 810px; } }
+
+@media (max-width: 890px) {
+  .main-content {
+    width: 540px; } }
+
+@media (max-width: 620px) {
+  .main-content {
+    width: 270px;
+    margin: 40px 0; } }
+
+.main-content h1 {
+  margin: 20px 5px;
+  font-size: 22px; }
+
+.boards {
+  display: inline-flex;
+  flex-wrap: wrap; }
+
+.board-link {
+  box-sizing: border-box;
+  width: 260px;
+  height: 140px;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 700;
+  transition: background 0.1s;
+  cursor: pointer;
+  display: inline-flex;
+  flex-direction: column;
+  color: white;
+  overflow-wrap: break-word;
+  text-decoration: none; }
+  .board-link.green {
+    background: #032; }
+  .board-link.blue {
+    background: #06a; }
+  .board-link.red {
+    background: #831; }
+  .board-link.pink {
+    background: #b06; }
+
+.board-link:hover.green,
+.board-link:focus.green {
+  background: #021; }
+
+.board-link:hover.blue,
+.board-link:focus.blue {
+  background: #059; }
+
+.board-link:hover.pink,
+.board-link:focus.pink {
+  background: #a05; }
+
+.board-link:hover.red,
+.board-link:focus.red {
+  background: #720; }
+
+.board-link-title {
+  padding-bottom: 5px; }
+
+.mini-board {
+  display: flex;
+  height: 100%; }
+
+.mini-list {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 24px;
+  height: 100%;
+  margin-right: 6px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.25); }
+
+.add-board-button {
+  box-sizing: border-box;
+  width: 260px;
+  height: 140px;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 700;
+  transition: background 0.1s;
+  cursor: pointer;
+  margin-bottom: 20px;
+  border: 0;
+  background: #ddd;
+  color: #444; }
+
+.add-board-button:hover,
+.add-board-button:focus {
+  background: #ccc; }
+
+.board-adder {
+  box-sizing: border-box;
+  width: 260px;
+  height: 140px;
+  margin: 5px;
+  margin-bottom: 20px;
+  padding: 8px;
+  border-radius: 3px;
+  background: #ddd;
+  color: #444;
+  font-size: 16px; }
+
+.submit-board-button {
+  padding: 8px 12px 8px 12px;
+  margin: 8px 0 0 0;
+  border: none;
+  border-radius: 3px;
+  background: #5aac44;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  transition: background 0.2s;
+  cursor: pointer; }
+
+.submit-board-button:focus,
+.submit-board-button:hover {
+  background: #3a8a24; }
+
+.submit-board-input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 4px;
+  border: 0;
+  border-radius: 3px;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 700;
+  overflow: hidden;
+  resize: none; }

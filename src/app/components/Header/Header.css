@@ -1,0 +1,76 @@
+header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+  background: #555;
+  z-index: 2;
+  transition: background 0.3s; }
+
+.green header {
+  background: rgba(70, 100, 90, 0.65); }
+
+.blue header {
+  background: rgba(50, 60, 80, 0.75); }
+
+.red header {
+  background: rgba(80, 50, 50, 0.65); }
+
+.pink header {
+  background: rgba(70, 20, 50, 0.75); }
+
+.header-title {
+  display: inline-flex;
+  align-items: center;
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: none; }
+
+.header-title img {
+  height: 30px; }
+
+.header-right-side {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+  height: 100%;
+  color: white; }
+
+.user-thumbnail {
+  height: 28px;
+  border-radius: 3px; }
+
+.guest-icon {
+  padding-top: 2px;
+  font-size: 24px; }
+
+.signout-link {
+  padding: 3px 5px 1px 5px;
+  margin-left: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  color: white;
+  background: rgba(0, 0, 0, 0.2);
+  text-decoration: none; }
+
+.signout-link:focus,
+.signout-link:hover {
+  background: rgba(0, 0, 0, 0.5); }
+
+.signout-icon {
+  padding-bottom: 2px;
+  font-size: 22px; }
+
+@media (max-width: 700px) {
+  .user-thumbnail,
+  .guest-icon {
+    display: none; }
+  .signout-link {
+    margin-left: 0px; } }

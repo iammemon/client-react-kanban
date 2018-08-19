@@ -1,0 +1,41 @@
+.card-title {
+  position: relative;
+  box-sizing: border-box;
+  margin: 8px 5px 0 5px;
+  border-radius: 3px;
+  color: #222;
+  background: #fbfbfb;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  overflow-wrap: break-word;
+  transition: box-shadow 0.15s;
+  user-select: none;
+  cursor: pointer !important; }
+
+.card-title:focus {
+  box-shadow: 0px 0px 1px 3px #00b4ff; }
+
+.card-title--drag {
+  box-shadow: 1px 9px 8px 1px rgba(0, 0, 0, 0.3) !important;
+  opacity: 1 !important; }
+
+.card-title-html {
+  padding: 6px 8px; }
+  .card-title-html h1,
+  .card-title-html h2,
+  .card-title-html h3,
+  .card-title-html h4,
+  .card-title-html h5,
+  .card-title-html h6 {
+    margin: 8px 0; }
+  .card-title-html img {
+    max-width: 100%; }
+  .card-title-html p {
+    margin: 4px 0; }
+  .card-title-html code,
+  .card-title-html pre {
+    white-space: pre-wrap; }
+  .card-title-html pre {
+    margin: 4px 0;
+    padding: 4px 2px;
+    background: rgba(100, 100, 100, 0.08); }
